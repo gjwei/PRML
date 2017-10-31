@@ -26,7 +26,7 @@ class RidgeRegression(Regression):
 
 if __name__ == '__main__':
     """对ridge regression 进行评估"""
-    from polynormial import PolynomialFeatures
+    from .polynormial import PolynomialFeatures
     import matplotlib.pyplot as plt
 
     def create_toy_data(func, sample_size, std):

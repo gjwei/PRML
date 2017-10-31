@@ -30,7 +30,7 @@ class Regression(object):
         else:
             raise NotImplementedError
     
-    def predict(self, X):
+    def predict(self, X, return_std=False):
         """
         predict outputs of the model
         :param X: (sample_size, n_features), array
@@ -38,7 +38,7 @@ class Regression(object):
         """
         self._check_input(X)
         if hasattr(self, '_predict'):
-            return self._predict(X)
+            return self._predict(X, return_std)
         else:
             raise NotImplementedError
     
